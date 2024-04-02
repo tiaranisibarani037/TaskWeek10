@@ -11,7 +11,7 @@ import model.CarsMerk;
 public class Driver {
     public static void main(String[] args) {
 
-        System.out.println("Pilih Merk Mobil:");
+        System.out.println("Pilih Merk Mobil: 0(Kijang), 1(Avanza), 2(Wuling)");
         
         Scanner input = new Scanner(System.in);
         int choice = input.nextInt();
@@ -39,7 +39,7 @@ public class Driver {
         }
 
         CarsMerk[] carsMerk = CarsMerk.values();
-        System.out.println("Merk Mobil: " + carsMerk[choice]);
+        System.out.println("Then you get " + carsMerk[choice]);
 
         input.close();
     }
